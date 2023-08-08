@@ -23,12 +23,6 @@
     background-color: white;
 }
 
-.covers:hover {
-    transform: scale(1.25);
-    z-index: 1;
-    margin: 10px;
-}
-
 .covers:hover .desc{
     display: none;
 }
