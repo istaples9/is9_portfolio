@@ -1,0 +1,140 @@
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/master.css" />
+    <link rel="stylesheet" type="text/css" href="css/projects.css" />
+    <script src="js/master.js"></script>
+    <script src="js/projects.js"></script>
+    <script
+      src="https://kit.fontawesome.com/cdaba070d4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body onload="showVisThumbs()">
+    <!--Header-->
+    <header id="header_template">
+      <script>
+        document.getElementById("header_template").innerHTML = header_html;
+      </script>
+    </header>
+
+    <div class="main_body">
+      <!--About Project-->
+      <div id="about_container" class="sub_body1">
+        <h2 id="about_title">TenFold Slide-Out</h2>
+        <p>
+          Product development of the Solo, Original, and XL Mamava Lactation
+          Suites - from initial concept to mass production.
+        </p>
+      </div>
+
+      <!--Slideshow-->
+      <div id="slideshow_container" class="sub_body1">
+        <!-- Image text -->
+        <div class="caption_container">
+          <p id="caption">Deployment Sequence Render</p>
+        </div>
+
+        <!-- Full-width images with number text -->
+        <div class="slides">
+          <div class="numbertext">1 / 8</div>
+          <img
+            id="img_1"
+            class="slide_img"
+            src="media/projects/tf_slideout/tf-so-render-01.png"
+            alt="Deployment Sequence Render"
+          />
+        </div>
+
+        <div class="slides">
+          <div class="numbertext">2 / 8</div>
+          <img
+            id="img_2"
+            class="slide_img"
+            src="media/projects/tf_slideout/tf-so-render-02.png"
+            alt="Deployment Sequence Render"
+          />
+        </div>
+
+        <div class="slides">
+          <div class="numbertext">3 / 8</div>
+          <img
+            id="img_3"
+            class="slide_img"
+            src="media/projects/tf_slideout/tf-so-render-03.png"
+            alt="Deployment Sequence Render"
+          />
+        </div>
+
+        <div class="slides">
+          <div class="numbertext">4 / 8</div>
+          <img
+            id="img_4"
+            class="slide_img"
+            src="media/projects/tf_slideout/tf-so-render-04.png"
+            alt="Deployment Sequence Render"
+          />
+        </div>
+
+        <div class="slides">
+          <div class="numbertext">5 / 8</div>
+          <img
+            id="img_5"
+            class="slide_img"
+            src="media/projects/tf_slideout/TFOSA-BUNK-RENDER-01.png"
+            alt="Bunkhouse Concept Render - Closed"
+          />
+        </div>
+
+        <div class="slides">
+          <div class="numbertext">6 / 8</div>
+          <img
+            id="img_6"
+            class="slide_img"
+            src="media/projects/tf_slideout/TFOSA-BUNK-RENDER-03.png"
+            alt="Bunkhouse Concept Render - Open"
+          />
+        </div>
+
+        <div class="slides">
+          <div class="numbertext">7 / 8</div>
+          <img
+            id="img_7"
+            class="slide_img"
+            src="media/projects/tf_slideout/TFOSA-F1-RENDER-01.png"
+            alt="F1 Retail Store Concept Render"
+          />
+        </div>
+
+        <div class="slides">
+          <div class="numbertext">8 / 8</div>
+          <img
+            id="img_8"
+            class="slide_img"
+            src="media/projects/tf_slideout/tf-so-render-01.png"
+            alt="Deployment Animation"
+          />
+          <video autoplay loop muted class="slide_img" src="media/projects/tf_slideout/TFSO FIELD ANIMATION 01_REVERSE.webm" type='video/webm'></video>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <!-- Thumbnail images -->
+        <div id="thumb_template" class="row">
+          <script defer>
+            document.getElementById("thumb_template").innerHTML =
+              injectThumbs();
+          </script>
+        </div>
+      </div>
+    </div>
+
+    <!--Footer-->
+    <div id="footer_template">
+      <script>
+        document.getElementById("footer_template").innerHTML = footer_html;
+      </script>
+    </div>
+  </body>
+</html>

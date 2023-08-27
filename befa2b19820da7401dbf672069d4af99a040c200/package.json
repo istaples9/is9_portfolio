@@ -1,0 +1,26 @@
+{
+  "name": "is9_design",
+  "version": "1.0.0",
+  "description": "",
+  "main": "get_quote.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/istaples9/is9_design.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/istaples9/is9_design/issues"
+  },
+  "homepage": "https://github.com/istaples9/is9_design#readme",
+  "dependencies": {
+    "firebase": "^9.13.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.9.3"
+  }
+}
