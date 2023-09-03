@@ -11,7 +11,7 @@ var header_html =
   '<a id="center_h" href="index.html">' +
     '<h1 id="h_title" class="h">Ian Staples</h2>' +
     '<hr>' +
-    '<h3 id="h_tag" class="h">Architectural & Mechanical Design</h4>' +
+    '<h3 id="h_tag" class="h">Mechanical Product Design & Engineering</h4>' +
   "</a>";
 
 function showDropdown() {
