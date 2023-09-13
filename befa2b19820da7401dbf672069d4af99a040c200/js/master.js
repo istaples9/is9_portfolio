@@ -8,7 +8,7 @@ window.addEventListener("scroll", function () {
 
 //Header HTML
 var header_html =
-  '<a id="center_h" href="index.html">' +
+  '<a id="center_h">' +
     '<h1 id="h_title" class="h">Ian Staples</h2>' +
     '<hr>' +
     '<h3 id="h_tag" class="h">Mechanical Product Design & Engineering</h4>' +
