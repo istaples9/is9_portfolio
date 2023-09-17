@@ -1,106 +1,79 @@
 <!DOCTYPE html>
-<html prefix="og: http://ogp.me/ns#">
-<head>
+<html lang="en" >
+    <head>
+        <script type="module" src="https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/master.css">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
 
-	<link rel="stylesheet" type="text/css" href="befa2b19820da7401dbf672069d4af99a040c200/css/master.css">
+        <!--imports jquery & font awesome modules-->
+        <script src="https://code.jquery.com/jquery-3.3.1.js" type="text/javascript"></script>
+        <script src="https://kit.fontawesome.com/cdaba070d4.js" crossorigin="anonymous"></script>
 
-	<title>Ian Staples Portfolio</title>
-	<meta property="og:title" content="Professional Portfolio" />
-	<meta property="og:type" content="website" />
-	<meta property="og:image" content="https://raw.githubusercontent.com/istaples9/is9_design/master/befa2b19820da7401dbf672069d4af99a040c200/media/projects/rc4/rc4_render_01.jpg" />
-	<meta property="og:url" content="https://is9.design/" />
+        <!--local scripts must go after firebase module import-->
+        <script src="js/master.js"></script>
+        <script type="module" src="js/get_quote.js"></script>
+    </head>
+    <body>
+        <!--Header-->
+        <header id="header_template">
+            <script>document.getElementById("header_template").innerHTML = header_html;</script>
+        </header>
 
-</head>
+        <!--Projects-->
+        <div id="projects" class="body_row">
+            <div class="sub_body">
+                <div class="project_container">
+                    <a href="tf_hydraulics.html" class="project">
+                        <img class="project_img" src="media/projects/tf_hydraulics/TF20-G-001A-RENDER_02 REDUCED.png">
+                        <div class="project_text">
+                            <div class="project_name">TenFold</div>
+                            <div class="project_title">Hydraulic Control System</div>
+                        </div>
+                    </a>
+                    <a href="van_frame.html" class="project">
+                        <img class="project_img" src="media/projects/van_frame/van-frame-03.jpg">
+                        <div class="project_text">
+                            <div class="project_name">VT VanWorks</div>
+                            <div class="project_title">Camper Van Frame System</div>
+                        </div>
+                    </a>
+                    <a href="rc4.html" class="project">
+                        <img class="project_img" src="media/projects/rc4/rc4_render_01.jpg">
+                        <div class="project_text">
+                            <div class="project_name">RC4</div>
+                            <div class="project_title">3D Printed RC Car</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="project_container">
+                    <a href="mamava.html" class="project">
+                        <img class="project_img" src="media/projects/mamava/phoenix_lactation_suite.jpg">
+                        <div class="project_text">
+                            <div class="project_name">Mamava</div>
+                            <div class="project_title">Lactation Suites</div>
+                        </div>
+                    </a>
+                    <a href="tf_20.html" class="project">
+                        <video autoplay loop muted id="slide_out_animation" class="project_img" width="640" height="264" src="media/projects/tf_20/TFSO FIELD ANIMATION 01_REVERSE.webm" type='video/webm' ></video>
+                        <div class="project_text">
+                            <div class="project_name">TenFold</div>
+                            <div class="project_title">TF20</div>
+                        </div>
+                    </a>
+                    <a href="engagement_ring.html" class="project">
+                        <img class="project_img" src="media/projects/engagement_ring/r03_04.png">
+                        <div class="project_text">
+                            <div class="project_name">is9</div>
+                            <div class="project_title">Engagement Ring</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
 
-<style>
-
-body {
-	font-size: 18px;
-	height: 100vh;
-	justify-content: center;
-	text-transform: none;
-}
-
-.login_box {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	margin: 20px;
-}
-
-.login {
-	font-size: 26px;
-	padding: 5px;
-	margin: 10px;
-}
-
-#login_button {
-	display: flex;
-	align-items: center;
-}
-
-</style>
-
-<body>
-
-	<div class="login_box">
-		<input class="login" id="password" type="password" placeholder="Password" /> <br />
-		<button class="login" id="login_button" type="button">Log In</button>
-		<p id="wrongPassword" style="display: none">wrong password</p>
-	</div>
-	<!--<div id="request" class="login_box">To access portfolio, please email your request to istaples9@gmail.com or message me on Linkedin. <br>Thank you.</div>-->
-
-
-	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-
-
-	 <script type="text/javascript" src="https://rawcdn.githack.com/chrisveness/crypto/7067ee62f18c76dd4a9d372a00e647205460b62b/sha1.js"></script>
-
-	<script type="text/javascript">
-	"use strict";
-
-
-	function loadPage(pwd) {
-
-		var hash= pwd;
-		hash= Sha1.hash(pwd);
-		var url= hash + "/index.html";
-
-		$.ajax({
-			url : url,
-			dataType : "html",
-			success : function(data) {
-
-				window.location= url;
-
-			},
-			error : function(xhr, ajaxOptions, thrownError) {
-
-
-				parent.location.hash= hash;
-
-				//$("#wrongPassword").show();
-				$("#password").attr("placeholder","wrong password");
-				$("#password").val("");
-			}
-		});
-	}
-
-
-	$("#login_button").on("click", function() {
-		loadPage($("#password").val());
-	});
-	$("#password").keypress(function(e) {
-		if (e.which == 13) {
-
-			loadPage($("#password").val());
-		}
-	});
-	$("#password").focus();
-
-	</script>
-
-</body>
+        <!--Footer-->
+        <div id="footer_template" class="body_row">
+            <script>document.getElementById("footer_template").innerHTML = footer_html;</script>
+        </div>       
+    </body>
 </html>
