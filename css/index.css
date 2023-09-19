@@ -71,4 +71,13 @@
   .project {
     padding-bottom: 80%;
   }
+
+  .project_img {
+    filter: brightness(50%);
+  }
+
+  .project_text {
+    display: flex;
+    zoom: 1.5
+  }
 }

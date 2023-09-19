@@ -4,7 +4,7 @@ body {
   align-items: center;
   font-family: Arial;
   width: 100%;
-  height: auto;
+  height: 100%;
   padding: 0;
   margin: 0;
 }
@@ -49,7 +49,7 @@ header {
   justify-content: center;
   width: auto;
   height: 100%;
-  padding:20px
+  padding:40px
 }
 
 a {
@@ -133,16 +133,24 @@ h3 {
 
 @media only screen and (max-width: 1000px) {
 
-  h1 {
-    font-size: 30px;
+  h1, h2, h3 {
+    zoom: 1.5;
   }
-  
-  h2 {
-    font-size: 22px;
+
+  #center_h {
+    padding: 80px;
   }
-  
-  h3 {
-    font-size: 18px;
+
+  #footer_template {
+    zoom: 1.5;
+  }
+
+  #info-container {
+    flex-direction: column;
+  }
+
+  .info {
+    padding: 30px;
   }
 
 }
