@@ -88,7 +88,7 @@ h3 {
   display: flex;
   flex-grow: 1;
   width: 100%;
-  min-height: 260px;
+  height: auto;
   bottom: 0px;
   background-color: #202020;
   justify-content: center;
@@ -118,6 +118,7 @@ h3 {
 .footer-text {
   font-size: 13px;
   color: white;
+  padding: 20px;
 }
 
 /*
@@ -133,8 +134,10 @@ h3 {
 
 @media only screen and (max-width: 1000px) {
 
-  h1, h2, h3 {
-    zoom: 1.5;
+  h1, h2, h3, p, .prev, .next, .numbertext {
+    zoom: 2;
+    -moz-transform: scale(2);
+    -moz-transform-origin: 0 0;
   }
 
   #center_h {
@@ -142,8 +145,9 @@ h3 {
   }
 
   #footer_template {
-    min-height: 400px;
-    zoom: 1.5;
+    zoom: 2;
+    -moz-transform: scale(2);
+    -moz-transform-origin: 0 0;
   }
 
   #info-container {
