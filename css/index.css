@@ -78,8 +78,13 @@
 
   .project_text {
     display: flex;
-    zoom: 1.5;
-    -moz-transform: scale(1.5);
-    -moz-transform-origin: 0 0;
+  }
+
+  .project_name {
+    font-size: 34px;
+  }
+
+  .project_title {
+    font-size: 26px;
   }
 }

@@ -97,6 +97,7 @@
 
 /* Container for image text */
 .caption_container {
+  font-size: 16px;
   text-align: center;
   background-color: #222;
   padding: 2px 16px;
@@ -157,4 +158,18 @@
   #slideshow_container {
     width: 100%;
   }
+
+  .prev, .next {
+  font-size: 48px;
+}
+
+  .numbertext {
+  font-size: 18px;
+  top: -70px;
+}
+
+.caption_container {
+  font-size: 22px;
+}
+
 }

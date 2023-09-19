@@ -88,6 +88,7 @@ h3 {
   display: flex;
   flex-grow: 1;
   width: 100%;
+  min-height: 200px;
   height: auto;
   bottom: 0px;
   background-color: #202020;
@@ -134,24 +135,24 @@ h3 {
 
 @media only screen and (max-width: 1000px) {
 
-  h1, h2, h3, p, .prev, .next, .numbertext {
-    zoom: 2;
+  h1 {
+    font-size: 34px;
   }
 
-  #center_h {
-    padding: 80px;
+  h2 {
+    font-size: 26px;
   }
 
-  #footer_template {
-    zoom: 2;
+  h3 {
+    font-size: 22px;
   }
 
-  #info-container {
-    flex-direction: column;
+  p {
+    font-size: 22px;
   }
 
-  .info {
-    padding: 30px;
+   .footer-text {
+    font-size: 23px;
   }
 
 }
