@@ -85,6 +85,7 @@ h3 {
 /*Footer*/
 #footer_template {
   display: flex;
+  flex-grow: 1;
   width: 100%;
   min-height: 260px;
   bottom: 0px;
@@ -141,5 +142,5 @@ h3 {
   h3 {
     font-size: 18px;
   }
-  
+
 }
