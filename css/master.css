@@ -4,7 +4,7 @@ body {
   align-items: center;
   font-family: Arial;
   width: 100%;
-  height: auto;
+  height: 100%;
   padding: 0;
   margin: 0;
 }
@@ -53,7 +53,8 @@ header {
 
 a {
   text-decoration: none;
-  color: black;
+  color: rgb(0, 0, 0);
+  padding: 20px;
 }
 
 .h {
@@ -131,6 +132,11 @@ h3 {
 */
 
 @media only screen and (max-width: 1000px) {
+
+  header {
+    height: 200%;
+  }
+
   h1 {
     font-size: 30px;
   }
