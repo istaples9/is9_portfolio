@@ -136,8 +136,6 @@ h3 {
 
   h1, h2, h3, p, .prev, .next, .numbertext {
     zoom: 2;
-    -moz-transform: scale(2);
-    -moz-transform-origin: 0 0;
   }
 
   #center_h {
@@ -146,8 +144,6 @@ h3 {
 
   #footer_template {
     zoom: 2;
-    -moz-transform: scale(2);
-    -moz-transform-origin: 0 0;
   }
 
   #info-container {
